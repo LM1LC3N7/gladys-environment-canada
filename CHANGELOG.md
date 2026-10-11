@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-11
+
 ### Added
 
 - Environment Canada weather provider: the forecasts of the nearest ECCC city
@@ -28,3 +30,6 @@ the notes of the version's GitHub Release.
   trend), and optional feels-like alerts (off by default).
 - Environment Canada precipitation radar as a provider image.
 - "Test Environment Canada" button in the Configuration screen.
+
+[Unreleased]: https://github.com/LM1LC3N7/gladys-environment-canada/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/LM1LC3N7/gladys-environment-canada/releases/tag/v0.1.0
