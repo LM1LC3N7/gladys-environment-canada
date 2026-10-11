@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "AQ_OBS-FDQBU-20261009000000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_OBS-FDQBU-20261010110000",
+        "aqhi_type": "AQHI-Observation",
+        "observation_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "observation_datetime": "2026-10-10T11:00:00Z",
+        "observation_datetime_text_en": "6:00 PM EDT Sunday 11 October 2026",
+        "observation_datetime_text_fr": "6h00 PM HAE dimanche 11 octobre 2026",
+        "aqhi": 2.12,
+        "special_notes_en": "",
+        "special_notes_fr": "",
+        "latest": true
+      }
+    }
+  ],
+  "numberMatched": 1,
+  "numberReturned": 1
+}

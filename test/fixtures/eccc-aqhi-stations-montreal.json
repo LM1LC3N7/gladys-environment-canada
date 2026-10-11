@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.65, 45.5166666666667]
+      },
+      "properties": {
+        "eccc_administrative-zone": "que",
+        "eccc_administrative-zone_name_en": "Québec",
+        "eccc_administrative-zone_name_fr": "Québec",
+        "location_name_en": "Montréal",
+        "location_name_fr": "Montréal",
+        "location_id": "EHHUN",
+        "url_msc-datamart_forecast": "http://dd.meteo.gc.ca/today/air_quality/que/forecast/realtime/xml/AQ_FCST_EHHUN_CURRENT.xml"
+      },
+      "id": "EHHUN"
+    }
+  ],
+  "numberMatched": 1,
+  "numberReturned": 1
+}

@@ -1,0 +1,383 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "222304278291093194202610070501_fea1-1994",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-114.60554264, 49.15377079],
+            [-113.9980011, 49.15377079],
+            [-113.9980011, 49.57390594],
+            [-114.60554264, 49.57390594],
+            [-114.60554264, 49.15377079]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "SPS",
+        "alert_type": "statement",
+        "alert_name_en": "special weather statement",
+        "alert_name_fr": "bulletin météorologique spécial",
+        "alert_short_name_en": "Special weather",
+        "alert_short_name_fr": "Météorologique spécial",
+        "publication_datetime": "2026-10-09T21:47:26.649Z",
+        "expiration_datetime": "2026-10-10T13:47:26.649Z",
+        "validity_datetime": "2026-10-09T21:35:00.000Z",
+        "event_end_datetime": "2026-10-12T12:00:00.000Z",
+        "alert_text_en": "The first snowfall of the season is expected for much of Alberta, and may affect holiday travel.\n\nRain will gradually change to snow tonight in West-Central Alberta, and for much of the province on Saturday or Saturday night. \n\nBy the end of the day Saturday, snow will accumulate over much of Central and Northern Alberta. Snowfall warnings have been issued where snowfall amounts are expected to have more significant impacts. \n\nSnow will move southwards Saturday night and continue to affect areas south of Calgary on Sunday. At this time, only light snow is expected in Calgary and areas to its east, but more significant snowfall may occur against the Southern Alberta foothills as well as areas along the US border including the Cypress Hills.\n \nPrepare for changing and deteriorating travel conditions.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to ABstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #ABStorm.",
+        "alert_text_fr": "Un premier épisode de neige de la saison est attendu sur une bonne partie de l'Alberta, ce qui pourrait perturber les déplacements pendant la longue fin de semaine.\n\nLa pluie se changera graduellement en neige ce soir et cette nuit sur le centre-ouest de l'Alberta, et samedi, samedi soir ou dans la nuit de samedi à dimanche pour la majeure partie de la province.\n\nD'ici la fin de la journée de samedi, de la neige s'accumulera sur une bonne partie du centre et du nord de l'Alberta. Des avertissements de neige ont été émis là où les accumulations de neige devraient avoir les répercussions les plus importantes.\n\nLa neige se propagera vers le sud samedi soir et dans la nuit de samedi à dimanche; elle continuera de toucher les régions au sud de Calgary dimanche. Pour le moment, on ne prévoit que de la faible neige à Calgary et dans les régions à l'est de la ville, mais des chutes de neige plus importantes pourraient survenir sur les contreforts du sud de l'Alberta ainsi que sur les régions situées le long de la frontière avec les États-Unis, y compris les collines Cypress.\n\nSoyez prêts à composer avec des conditions routières qui pourraient changer et se détériorer.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoAB@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #ABMeteo.",
+        "risk_colour_en": null,
+        "risk_colour_fr": null,
+        "confidence_en": null,
+        "confidence_fr": null,
+        "impact_en": null,
+        "impact_fr": null,
+        "feature_name_en": "M.D. of Pincher Creek near Beauvais Lake Prov. Park",
+        "feature_name_fr": "d.m. de Pincher Creek près du Beauvais Lake Provincial Park",
+        "province": "AB",
+        "status_en": "ended",
+        "status_fr": "terminé",
+        "feature_id": "fea1-1994"
+      }
+    },
+    {
+      "id": "211510777644744001202610090501_fea1-1553",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-110.00510866, 49.5235049],
+            [-109.25653592, 49.5235049],
+            [-109.25653592, 49.79492848],
+            [-110.00510866, 49.79492848],
+            [-110.00510866, 49.5235049]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "SPS",
+        "alert_type": "statement",
+        "alert_name_en": "special weather statement",
+        "alert_name_fr": "bulletin météorologique spécial",
+        "alert_short_name_en": "Special weather",
+        "alert_short_name_fr": "Météorologique spécial",
+        "publication_datetime": "2026-10-10T01:15:08.582Z",
+        "expiration_datetime": "2026-10-10T17:15:08.582Z",
+        "validity_datetime": "2026-10-11T00:00:00.000Z",
+        "event_end_datetime": "2026-10-12T06:00:00.000Z",
+        "alert_text_en": "Snow possible over higher terrain of the Cypress Hills on Sunday.\n\nA passing cold front will bring northerly winds and a chance of snow to the higher terrain of the Cypress Hills on Sunday. Accumulations of up to 5 cm may be possible.\n\nHeading into the week, a more significant low pressure system will develop in Montana on Sunday night and could spread accumulating snow across the region into Monday. This system may bring as much as 5 to 10 cm of snow to areas south of the Trans-Canada Highway in southwestern Saskatchewan, but confidence on the strength and location of this snow is still low.\n\nWatch for updated forecasts and any potential weather alerts as the event nears.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to SKstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #SKStorm.",
+        "alert_text_fr": "Possibilité de neige sur les secteurs montagneux des collines Cypress dimanche.\n\nLe passage d'un front froid occasionnera des vents du nord et un risque de neige sur les secteurs montagneux des collines Cypress dimanche. Une accumulation pouvant atteindre 5 cm est possible.\n\nAu début de la semaine, une dépression plus importante se formera sur le Montana dimanche soir et dans la nuit de dimanche à lundi; elle pourrait propager de la neige qui s'accumule sur la région jusqu'à lundi. Ce système pourrait déverser de 5 à 10 cm de neige sur les régions situées au sud de la route Transcanadienne dans le sud-ouest de la Saskatchewan, mais le degré de confiance quant à l'intensité et à l'emplacement de cette neige est toujours faible.\n\nVeuillez surveiller les mises à jour des prévisions et les éventuelles alertes météorologiques à l'approche de l'événement.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoSK@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #SKMeteo.",
+        "risk_colour_en": null,
+        "risk_colour_fr": null,
+        "confidence_en": null,
+        "confidence_fr": null,
+        "impact_en": null,
+        "impact_fr": null,
+        "feature_name_en": "R.M. of Maple Creek including Cypress Hills Prov. Park",
+        "feature_name_fr": "m.r. de Maple Creek incluant Cypress Hills Prov. Park",
+        "province": "SK",
+        "status_en": "continued",
+        "status_fr": "maintenu",
+        "feature_id": "fea1-1553"
+      }
+    },
+    {
+      "id": "127066301387506118202610100507_fea1-893",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-67.39507197, 52.27961297],
+            [-65.20747112, 52.27961297],
+            [-65.20747112, 53.67752024],
+            [-67.39507197, 53.67752024],
+            [-67.39507197, 52.27961297]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "SPS",
+        "alert_type": "statement",
+        "alert_name_en": "special weather statement",
+        "alert_name_fr": "bulletin météorologique spécial",
+        "alert_short_name_en": "Special weather",
+        "alert_short_name_fr": "Météorologique spécial",
+        "publication_datetime": "2026-10-10T07:50:46.700Z",
+        "expiration_datetime": "2026-10-10T23:50:46.700Z",
+        "validity_datetime": "2026-10-11T15:00:00.000Z",
+        "event_end_datetime": "2026-10-12T09:00:00.000Z",
+        "alert_text_en": "The first notable accumulating snowfall of the season is expected.\n\nLocations: Labrador City and Wabush.\n\nTotal snowfall: generally near 5 cm, with locally higher amounts possible.\n\nTime span: Sunday afternoon until early Monday morning.\n\nRemarks: Snow may make Thanksgiving travel slower than usual, with slippery roads and walkways. Be prepared for winter driving conditions, keep a snow brush handy, and allow extra time to reach your destination.\n\nAs temperatures hover near the freezing point, snowfall accumulations may vary over short distances.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to NLstorm@ec.gc.ca or post reports on social media using #NLwx.",
+        "alert_text_fr": "La première accumulation notable de neige de la saison est attendue.\n\nRégions : Labrador City et Wabush.\n\nQuantité totale de neige : près de 5 cm en général, mais possiblement davantage par endroits.\n\nPériode : de dimanche après-midi jusque tôt lundi matin.\n\nRemarques : la neige pourrait rendre les déplacements de l'Action de grâce plus lents que d'habitude, en raison de routes et de trottoirs glissants. Soyez prêts à composer avec des conditions routières hivernales, gardez un balai à neige à portée de main et prévoyez plus de temps pour vous rendre à destination.\n\nÉtant donné que les températures oscilleront près du point de congélation, l'accumulation de neige pourrait varier sur de courtes distances.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoNL@ec.gc.ca ou publiez un message sur les réseaux sociaux en utilisant #NLMeteo.",
+        "risk_colour_en": null,
+        "risk_colour_fr": null,
+        "confidence_en": null,
+        "confidence_fr": null,
+        "impact_en": null,
+        "impact_fr": null,
+        "feature_name_en": "Labrador City and Wabush",
+        "feature_name_fr": "Labrador City et Wabush",
+        "province": "NL",
+        "status_en": "issued",
+        "status_fr": "émis",
+        "feature_id": "fea1-893"
+      }
+    },
+    {
+      "id": "633290572131693643202610100506_fea1-810",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-67.82014783, 45.50014002],
+            [-66.23550285, 45.50014002],
+            [-66.23550285, 46.30170446],
+            [-67.82014783, 46.30170446],
+            [-67.82014783, 45.50014002]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "FTA",
+        "alert_type": "advisory",
+        "alert_name_en": "frost advisory",
+        "alert_name_fr": "avis de gel",
+        "alert_short_name_en": "Frost (advisory)",
+        "alert_short_name_fr": "Gel (avis)",
+        "publication_datetime": "2026-10-10T07:33:22.309Z",
+        "expiration_datetime": "2026-10-10T23:33:22.309Z",
+        "validity_datetime": "2026-10-11T03:00:00.000Z",
+        "event_end_datetime": "2026-10-11T09:00:00.000Z",
+        "alert_text_en": "Conditions are favourable for the development of frost tonight.\n\nLocations: Southern New Brunswick.\n\nMinimum temperatures: minus 3 to plus 1 (coolest in low-lying areas).\n\nTime span: early Sunday morning.\n\nRemarks: Widespread frost is expected to form as clear skies and light winds coincide with very cool temperatures.\n\nDamage to plants, trees, and crops is possible.\n\nTake preventative measures to protect cold-sensitive plants, trees, and crops. Cover up plants, especially those in frost-prone areas.\n\nFrost advisories are issued when widespread frost or freezing temperatures are expected during the growing season.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to NBstorm@ec.gc.ca or post reports on social media using #NBStorm.",
+        "alert_text_fr": "Les conditions sont favorables à la formation de gel cette nuit.\n\nRégion : le sud du Nouveau-Brunswick.\n\nTempératures minimales : de moins 3 à plus 1 (temps le plus frais dans les basses terres).\n\nPériode : tôt dimanche matin.\n\nRemarques : du gel généralisé devrait se former sous l'effet conjoint d'un ciel dégagé, de vents légers et de températures très basses.\n\nDes dommages aux plantes, aux arbres et aux cultures sont possibles.\n\nPrenez des mesures préventives pour protéger les plantes, les arbres et les cultures vulnérables au froid. Couvrez les plantes, en particulier dans les zones sujettes au gel.\n\nUn avis de gel est émis lorsqu’on prévoit des températures sous le point de congélation ou du gel généralisé pendant la saison de croissance.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoNB@ec.gc.ca ou publiez un message sur les réseaux sociaux en utilisant #NBMeteo.",
+        "risk_colour_en": "yellow",
+        "risk_colour_fr": "jaune",
+        "confidence_en": "High",
+        "confidence_fr": "élevée",
+        "impact_en": "Moderate",
+        "impact_fr": "modéré",
+        "feature_name_en": "Fredericton and Southern York County",
+        "feature_name_fr": "Fredericton et sud du comté de York",
+        "province": "NB",
+        "status_en": "issued",
+        "status_fr": "émis",
+        "feature_id": "fea1-810"
+      }
+    },
+    {
+      "id": "1239431221279467050202610090504_fea1-978",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.0767297, 46.61201906],
+            [-70.48416879, 46.61201906],
+            [-70.48416879, 46.98419391],
+            [-71.0767297, 46.98419391],
+            [-71.0767297, 46.61201906]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "FTA",
+        "alert_type": "advisory",
+        "alert_name_en": "frost advisory",
+        "alert_name_fr": "avis de gel",
+        "alert_short_name_en": "Frost (advisory)",
+        "alert_short_name_fr": "Gel (avis)",
+        "publication_datetime": "2026-10-10T08:39:41.742Z",
+        "expiration_datetime": "2026-10-11T00:39:41.742Z",
+        "validity_datetime": "2026-10-10T08:38:00.000Z",
+        "event_end_datetime": "2026-10-11T14:00:00.000Z",
+        "alert_text_en": "Temperatures will drop to near the freezing mark overnight tonight.\n\nTake preventative measures to protect cold-sensitive plants, trees, and crops.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to QCstorm@ec.gc.ca or post reports on social media using #QCStorm.",
+        "alert_text_fr": "Les températures chuteront près du point de congélation la nuit prochaine.\n\nPrenez des mesures préventives pour protéger les plantes, les arbres et les cultures vulnérables au froid.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoQC@ec.gc.ca ou publiez un message sur les réseaux sociaux en utilisant #meteoqc.",
+        "risk_colour_en": "yellow",
+        "risk_colour_fr": "jaune",
+        "confidence_en": "High",
+        "confidence_fr": "élevée",
+        "impact_en": "Moderate",
+        "impact_fr": "modéré",
+        "feature_name_en": "Bellechasse area",
+        "feature_name_fr": "secteur de Bellechasse",
+        "province": "QC",
+        "status_en": "continued",
+        "status_fr": "maintenu",
+        "feature_id": "fea1-978"
+      }
+    },
+    {
+      "id": "90955113829579093202610090501_fea1-2181",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-115.89781189, 54.84973907],
+            [-115.06925201, 54.84973907],
+            [-115.06925201, 55.46137619],
+            [-115.89781189, 55.46137619],
+            [-115.89781189, 54.84973907]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "SFW",
+        "alert_type": "warning",
+        "alert_name_en": "snowfall warning",
+        "alert_name_fr": "avertissement de neige",
+        "alert_short_name_en": "Snowfall",
+        "alert_short_name_fr": "Neige",
+        "publication_datetime": "2026-10-10T10:25:07.977Z",
+        "expiration_datetime": "2026-10-11T02:04:07.977Z",
+        "validity_datetime": "2026-10-10T10:19:00.000Z",
+        "event_end_datetime": "2026-10-11T00:00:00.000Z",
+        "alert_text_en": "Snowfall with total amounts near 15 cm are expected in the Swan Hills today.\n\nSnow began overnight across the area and will continue through the day, becoming light by the end of the day. \n\nSnowfall amounts over lower terrain will be relatively light, but over Highway 33 leading to Swan Hills, up to 15 cm of snow will fall before the snow tapers off at the end of the day.\n\nTravel will likely be challenging. Roads and walkways will likely be difficult to navigate due to accumulating snow.\n\nIf driving, turn on your lights, slow down and maintain a safe following distance.\n\nSnowfall warnings are issued when significant impacts are expected due to snowfall accumulations.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to ABstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #ABStorm.",
+        "alert_text_fr": "On prévoit une quantité totale de près de 15 cm de neige sur Swan Hills aujourd'hui.\n\nDe la neige a commencé à tomber sur la région au cours de la nuit; elle persistera au cours de la journée, puis deviendra faible d'ici la fin de la journée.\n\nL'accumulation de neige sera relativement faible dans les basses terres, mais il tombera jusqu'à 15 cm de neige sur la route 33 vers Swan Hills d'ici à ce que la neige cesse peu à peu en fin de journée.\n\nLes déplacements seront probablement difficiles. Il sera probablement difficile de circuler sur les routes et les trottoirs en raison de l’accumulation de neige.\n\nSi vous conduisez, allumez vos phares, ralentissez et maintenez une distance sécuritaire.\n\nUn avertissement de neige est émis lorsqu’on prévoit des impacts significatifs en raison d’une accumulation de neige.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoAB@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #ABMeteo.",
+        "risk_colour_en": "yellow",
+        "risk_colour_fr": "jaune",
+        "confidence_en": "High",
+        "confidence_fr": "élevée",
+        "impact_en": "Moderate",
+        "impact_fr": "modéré",
+        "feature_name_en": "Big Lakes County near Driftpile Faust and Kinuso",
+        "feature_name_fr": "cté de Big Lakes près de Driftpile Faust et Kinuso",
+        "province": "AB",
+        "status_en": "continued",
+        "status_fr": "maintenu",
+        "feature_id": "fea1-2181"
+      }
+    },
+    {
+      "id": "94714742829579093202610090501_fea1-2480",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-124.69333281, 69.13507331],
+            [-123.47109952, 69.13507331],
+            [-123.47109952, 69.56734562],
+            [-124.69333281, 69.56734562],
+            [-124.69333281, 69.13507331]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "WDW",
+        "alert_type": "warning",
+        "alert_name_en": "wind warning",
+        "alert_name_fr": "avertissement de vent",
+        "alert_short_name_en": "Wind",
+        "alert_short_name_fr": "Vent",
+        "publication_datetime": "2026-10-10T10:16:37.779Z",
+        "expiration_datetime": "2026-10-10T23:00:37.779Z",
+        "validity_datetime": "2026-10-10T10:14:00.000Z",
+        "event_end_datetime": "2026-10-10T21:00:00.000Z",
+        "alert_text_en": "Southerly winds at Paulatuk will gust up to 90 km/h today. \n\nThese strong winds will diminish on Saturday afternoon.\n\nLocal utility outages are possible. Damage to roofs, fences, branches or soft shelters is possible.\n\nIf outside, protect yourself from flying or falling debris.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to NTstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #NTStorm.",
+        "alert_text_fr": "Les vents du sud qui soufflent sur Paulatuk souffleront en rafales jusqu'à 90 km/h aujourd'hui.\n\nCes vents forts faibliront samedi après-midi.\n\nDes pannes de courant sont possibles par endroits. Des dommages aux toits, aux clôtures, aux branches ou aux abris souples sont possibles.\n\nSi vous êtes à l’extérieur, protégez-vous des débris qui volent ou qui tombent.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoNT@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #NTMeteo.",
+        "risk_colour_en": "yellow",
+        "risk_colour_fr": "jaune",
+        "confidence_en": "High",
+        "confidence_fr": "élevée",
+        "impact_en": "Moderate",
+        "impact_fr": "modéré",
+        "feature_name_en": "Paulatuk",
+        "feature_name_fr": "Paulatuk",
+        "province": "NT",
+        "status_en": "continued",
+        "status_fr": "maintenu",
+        "feature_id": "fea1-2480"
+      }
+    },
+    {
+      "id": "1939246961026296824202610080501_fea1-1855",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-110.00578893, 54.48516282],
+            [-108.05156574, 54.48516282],
+            [-108.05156574, 56.12255338],
+            [-110.00578893, 56.12255338],
+            [-110.00578893, 54.48516282]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "RFW",
+        "alert_type": "warning",
+        "alert_name_en": "rainfall warning",
+        "alert_name_fr": "avertissement de pluie",
+        "alert_short_name_en": "Rainfall",
+        "alert_short_name_fr": "Pluie",
+        "publication_datetime": "2026-10-10T10:33:04.180Z",
+        "expiration_datetime": "2026-10-11T02:33:04.180Z",
+        "validity_datetime": "2026-10-10T10:29:00.000Z",
+        "event_end_datetime": "2026-10-11T03:00:00.000Z",
+        "alert_text_en": "Heavy rain is expected, with total rainfall amounts of 40 to 60 mm.\n\nRain will continue through the day today, and will at times be mixed with wet snow. Rain will change over to snow tonight and end before Sunday morning.\n\nWater will likely pool on roads and in low-lying areas. Local utility outages are possible.\n\nDon't drive through flooded roadways. Allow extra time for travel.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to SKstorm@ec.gc.ca, call 1-800-239-0484 or post reports on social media using #SKStorm.",
+        "alert_text_fr": "On prévoit de la pluie forte; les quantités totales devraient être de l'ordre de 40 à 60 mm.\n\nLa pluie persistera toute la journée aujourd'hui; elle sera mêlée de neige fondante par moments. La pluie se changera en neige ce soir ou cette nuit, puis les précipitations cesseront avant l'aube dimanche.\n\nUne accumulation d’eau est probable sur les routes et dans les basses terres. Des pannes de courant sont possibles par endroits.\n\nNe conduisez pas sur des routes inondées. Prévoyez plus de temps pour les déplacements.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoSK@ec.gc.ca, appelez au 1-800-239-0484 ou publiez un message sur les réseaux sociaux en utilisant #SKMeteo.",
+        "risk_colour_en": "yellow",
+        "risk_colour_fr": "jaune",
+        "confidence_en": "High",
+        "confidence_fr": "élevée",
+        "impact_en": "Moderate",
+        "impact_fr": "modéré",
+        "feature_name_en": "Buffalo Narrows and Peter Pond Lake",
+        "feature_name_fr": "Buffalo Narrows et lac Peter Pond",
+        "province": "SK",
+        "status_en": "continued",
+        "status_fr": "maintenu",
+        "feature_id": "fea1-1855"
+      }
+    },
+    {
+      "id": "726269571966802439202610090517_fea1-3598",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-139.41706411, 69.50581211],
+            [-138.71380142, 69.50581211],
+            [-138.71380142, 69.69368338],
+            [-139.41706411, 69.69368338],
+            [-139.41706411, 69.50581211]
+          ]
+        ]
+      },
+      "properties": {
+        "alert_code": "CFW",
+        "alert_type": "warning",
+        "alert_name_en": "storm surge warning",
+        "alert_name_fr": "avertissement de submersion côtière",
+        "alert_short_name_en": "Storm surge",
+        "alert_short_name_fr": "Submersion côtière",
+        "publication_datetime": "2026-10-10T10:21:07.882Z",
+        "expiration_datetime": "2026-10-11T02:21:07.882Z",
+        "validity_datetime": "2026-10-10T10:17:00.000Z",
+        "event_end_datetime": "2026-10-13T10:17:00.000Z",
+        "alert_text_en": "This warning is in effect for parts of the coast due to the following hazard(s): \n- Higher than normal water levels\n\nStorm surge is expected at high tides at Herschel Island into Tuesday.\n\nWater levels are expected to reach 20 cm above highest astronomical tide and may cause moderate flooding. \n\nThese high water levels will return at high tides in the overnight hours through Tuesday. Minor flooding may also occur at high tides in the afternoon.\n\nThese conditions can cause damage to infrastructure near the coast, including boats beached or anchored along the shoreline.\n\nPlease continue to monitor alerts and forecasts issued by Environment Canada. To report severe weather, send an email to YTstorm@ec.gc.ca or post reports on social media using #YTStorm.",
+        "alert_text_fr": "Cet avertissement est en vigueur pour certaines parties de la côte en raison des dangers suivants :\n- Niveaux d'eau plus élevé que la normale\n\nOn prévoit une onde de tempête lors de la marée haute sur l'île Herschel jusqu'à mardi.\n\nLes niveaux d'eau devraient atteindre 20 cm au-dessus de la marée astronomique la plus haute, ce qui pourrait occasionner des inondations modérées.\n\nCes niveaux d'eau élevés reprendront lors des marées hautes nocturnes jusqu'à mardi. Des inondations mineures pourraient également survenir lors des marées hautes en après-midi.\n\nCes conditions pourraient endommager les infrastructures près de la côte, notamment les bateaux échoués ou ancrés le long du littoral.\n\nVeuillez continuer à surveiller les alertes et les prévisions émises par Environnement Canada. Pour signaler du temps violent, envoyez un courriel à meteoYT@ec.gc.ca ou publiez un message sur les réseaux sociaux en utilisant #YTMeteo.",
+        "risk_colour_en": "yellow",
+        "risk_colour_fr": "jaune",
+        "confidence_en": "High",
+        "confidence_fr": "élevée",
+        "impact_en": "Moderate",
+        "impact_fr": "modéré",
+        "feature_name_en": "Coastline of Yukon incl. Herschel Island",
+        "feature_name_fr": "littoral du Yukon incl. l'île Herschel",
+        "province": "YT",
+        "status_en": "continued",
+        "status_fr": "maintenu",
+        "feature_id": "fea1-3598"
+      }
+    }
+  ]
+}

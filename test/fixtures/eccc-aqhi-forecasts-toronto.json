@@ -1,0 +1,1731 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610082300-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101000-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "5:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "5h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T10:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090000-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101100-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "6:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "6h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T11:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090100-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101200-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "7:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "7h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T12:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090200-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101300-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "8:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "8h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T13:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090300-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101400-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "9:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "9h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T14:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090400-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101500-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "10:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "10h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T15:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090500-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101600-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "11:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "11h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T16:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090600-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101700-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "12:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "12h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T17:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090700-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101800-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "1:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "1h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T18:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090800-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101900-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "2:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "2h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T19:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090900-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102000-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "3:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "3h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T20:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091000-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102100-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "4:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "4h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T21:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091100-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102200-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "5:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "5h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T22:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091200-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102300-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "6:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "6h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T23:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091300-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110000-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "7:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "7h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T00:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091400-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110100-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "8:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "8h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T01:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091500-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110200-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "9:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "9h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T02:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091600-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110300-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "10:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "10h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T03:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091700-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110400-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "11:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "11h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T04:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091800-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110500-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "12:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "12h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T05:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091900-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110600-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "1:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "1h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T06:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092000-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110700-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "2:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "2h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T07:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092100-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110800-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "3:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "3h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T08:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092200-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110900-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "4:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "4h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T09:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092300-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111000-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "5:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "5h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T10:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100000-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111100-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "6:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "6h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T11:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100100-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111200-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "7:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "7h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T12:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100200-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111300-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "8:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "8h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T13:00:00Z",
+        "aqhi": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100300-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111400-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "9:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "9h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T14:00:00Z",
+        "aqhi": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100400-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111500-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "10:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "10h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T15:00:00Z",
+        "aqhi": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100500-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111600-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "11:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "11h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T16:00:00Z",
+        "aqhi": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100600-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111700-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "12:00 AM EDT Tuesday 13 October 2026",
+        "forecast_datetime_text_fr": "12h00 AM HAE mardi 13 octobre 2026",
+        "forecast_datetime": "2026-10-11T17:00:00Z",
+        "aqhi": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100700-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111800-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "1:00 AM EDT Tuesday 13 October 2026",
+        "forecast_datetime_text_fr": "1h00 AM HAE mardi 13 octobre 2026",
+        "forecast_datetime": "2026-10-11T18:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100800-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111900-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "2:00 AM EDT Tuesday 13 October 2026",
+        "forecast_datetime_text_fr": "2h00 AM HAE mardi 13 octobre 2026",
+        "forecast_datetime": "2026-10-11T19:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100900-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610112000-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "3:00 AM EDT Tuesday 13 October 2026",
+        "forecast_datetime_text_fr": "3h00 AM HAE mardi 13 octobre 2026",
+        "forecast_datetime": "2026-10-11T20:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610101000-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610112100-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "4:00 AM EDT Tuesday 13 October 2026",
+        "forecast_datetime_text_fr": "4h00 AM HAE mardi 13 octobre 2026",
+        "forecast_datetime": "2026-10-11T21:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610101100-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610112200-202610101000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_datetime_text_en": "5:00 AM EDT Tuesday 13 October 2026",
+        "forecast_datetime_text_fr": "5h00 AM HAE mardi 13 octobre 2026",
+        "forecast_datetime": "2026-10-11T22:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-period-202610082300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-period-202610101000",
+        "aqhi_type": "AQHI-Forecast-Period",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-10T10:00:00Z",
+        "forecast_period": {
+          "period_2": {
+            "forecast_period_en": "Tonight",
+            "forecast_period_fr": "Ce soir et cette nuit",
+            "aqhi": 2,
+            "aqhi_insmoke": null
+          },
+          "period_3": {
+            "forecast_period_en": "Tomorrow",
+            "forecast_period_fr": "Demain",
+            "aqhi": 3,
+            "aqhi_insmoke": null
+          },
+          "period_4": {
+            "forecast_period_en": "Tomorrow Night",
+            "forecast_period_fr": "Demain soir et nuit",
+            "aqhi": 4,
+            "aqhi_insmoke": null
+          },
+          "period_5": {
+            "forecast_period_en": "Day 3",
+            "forecast_period_fr": "Jour 3",
+            "aqhi": 4,
+            "aqhi_insmoke": null
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081200-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610092300-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "6:00 AM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "6h00 AM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-09T23:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081300-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100000-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "7:00 AM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "7h00 AM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T00:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081400-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100100-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "8:00 AM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "8h00 AM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T01:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081500-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100200-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "9:00 AM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "9h00 AM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T02:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081600-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100300-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "10:00 AM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "10h00 AM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T03:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081700-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100400-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "11:00 AM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "11h00 AM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T04:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081800-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100500-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "12:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "12h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T05:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610081900-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100600-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "1:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "1h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T06:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610082000-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100700-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "2:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "2h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T07:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610082100-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100800-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "3:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "3h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T08:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610082200-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610100900-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "4:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "4h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T09:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610082300-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101000-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "5:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "5h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T10:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090000-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101100-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "6:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "6h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T11:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090100-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101200-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "7:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "7h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T12:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090200-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101300-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "8:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "8h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T13:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090300-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101400-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "9:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "9h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T14:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090400-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101500-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "10:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "10h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T15:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090500-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101600-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "11:00 PM EDT Sunday 11 October 2026",
+        "forecast_datetime_text_fr": "11h00 PM HAE dimanche 11 octobre 2026",
+        "forecast_datetime": "2026-10-10T16:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090600-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101700-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "12:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "12h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T17:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090700-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101800-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "1:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "1h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T18:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090800-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610101900-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "2:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "2h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T19:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610090900-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102000-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "3:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "3h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T20:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091000-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102100-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "4:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "4h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T21:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091100-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102200-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "5:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "5h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T22:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091200-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610102300-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "6:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "6h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-10T23:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091300-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110000-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "7:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "7h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T00:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091400-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110100-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "8:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "8h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T01:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091500-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110200-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "9:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "9h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T02:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091600-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110300-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "10:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "10h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T03:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091700-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110400-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "11:00 AM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "11h00 AM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T04:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091800-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110500-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "12:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "12h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T05:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610091900-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110600-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "1:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "1h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T06:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092000-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110700-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "2:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "2h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T07:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092100-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110800-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "3:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "3h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T08:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092200-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610110900-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "4:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "4h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T09:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610092300-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111000-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "5:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "5h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T10:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610100000-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610111100-202610092300",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_datetime_text_en": "6:00 PM EDT Monday 12 October 2026",
+        "forecast_datetime_text_fr": "6h00 PM HAE lundi 12 octobre 2026",
+        "forecast_datetime": "2026-10-11T11:00:00Z",
+        "aqhi": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-period-202610081200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-period-202610092300",
+        "aqhi_type": "AQHI-Forecast-Period",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T23:00:00Z",
+        "forecast_period": {
+          "period_1": {
+            "forecast_period_en": "Today",
+            "forecast_period_fr": "Aujourd'hui",
+            "aqhi": 2,
+            "aqhi_insmoke": null
+          },
+          "period_2": {
+            "forecast_period_en": "Tonight",
+            "forecast_period_fr": "Ce soir et cette nuit",
+            "aqhi": 2,
+            "aqhi_insmoke": null
+          },
+          "period_3": {
+            "forecast_period_en": "Tomorrow",
+            "forecast_period_fr": "Demain",
+            "aqhi": 3,
+            "aqhi_insmoke": null
+          },
+          "period_4": {
+            "forecast_period_en": "Tomorrow Night",
+            "forecast_period_fr": "Demain soir et nuit",
+            "aqhi": 3,
+            "aqhi_insmoke": null
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610072300-202610072300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610091000-202610091000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T10:00:00Z",
+        "forecast_datetime_text_en": "5:00 PM EDT Saturday 10 October 2026",
+        "forecast_datetime_text_fr": "5h00 PM HAE samedi 10 octobre 2026",
+        "forecast_datetime": "2026-10-09T10:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610080000-202610072300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610091100-202610091000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T10:00:00Z",
+        "forecast_datetime_text_en": "6:00 PM EDT Saturday 10 October 2026",
+        "forecast_datetime_text_fr": "6h00 PM HAE samedi 10 octobre 2026",
+        "forecast_datetime": "2026-10-09T11:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610080100-202610072300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610091200-202610091000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T10:00:00Z",
+        "forecast_datetime_text_en": "7:00 PM EDT Saturday 10 October 2026",
+        "forecast_datetime_text_fr": "7h00 PM HAE samedi 10 octobre 2026",
+        "forecast_datetime": "2026-10-09T12:00:00Z",
+        "aqhi": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AQ_FCST-FDQBU-202610080200-202610072300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.2308334, 43.7558333]
+      },
+      "properties": {
+        "id": "AQ_FCST-FDQBU-202610091300-202610091000",
+        "aqhi_type": "AQHI-Forecast",
+        "forecast_type": "original",
+        "location_name_en": "Toronto East",
+        "location_name_fr": "Toronto Est",
+        "location_id": "FDQBU",
+        "publication_datetime": "2026-10-09T10:00:00Z",
+        "forecast_datetime_text_en": "8:00 PM EDT Saturday 10 October 2026",
+        "forecast_datetime_text_fr": "8h00 PM HAE samedi 10 octobre 2026",
+        "forecast_datetime": "2026-10-09T13:00:00Z",
+        "aqhi": 2
+      }
+    }
+  ],
+  "numberMatched": 228,
+  "numberReturned": 80
+}
