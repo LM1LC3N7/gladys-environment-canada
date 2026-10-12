@@ -409,8 +409,8 @@ export function buildAirQualityContent(airQuality, { utcOffsetMinutes = 0 } = {}
       type: 'text',
       variant: 'body',
       text: {
-        en: `${level.advice.en}\nAt risk: ${level.atRisk.en}`,
-        fr: `${level.advice.fr}\nÀ risque : ${level.atRisk.fr}`,
+        en: `${level.advice.en}\nPeople at risk: ${level.atRisk.en}`,
+        fr: `${level.advice.fr}\nPersonnes à risque : ${level.atRisk.fr}`,
       },
     });
   }

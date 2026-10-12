@@ -10,6 +10,12 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+### Fixed
+
+- "Air quality" widget: the advice for the vulnerable people reads "People
+  at risk:" instead of "At risk:", which read as if the air itself were a
+  risk at a low index.
+
 ## [0.1.0] - 2026-10-11
 
 ### Added

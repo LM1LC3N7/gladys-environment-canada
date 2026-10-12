@@ -52,7 +52,7 @@ export const AQHI_LEVELS = [
     },
     atRisk: {
       en: 'Reduce or reschedule strenuous activities outdoors. Children and the elderly should also take it easy.',
-      fr: 'Réduisez ou réorganisez les activités exténuantes en plein air. Les enfants et les aînés devraient aussi modérer leurs activités.',
+      fr: 'Réduisez ou réorganisez les activités exténuantes en plein air. Les enfants et les aînés devraient aussi ralentir.',
     },
   },
   {

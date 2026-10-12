@@ -182,7 +182,7 @@ test('air quality: measured value, gauge, peak, periods, advice', () => {
   assert.equal(items.at(-1).value.fr, 'Toronto Est (4 km)');
   assert.ok(items.some((i) => i.label.fr === 'Ce soir et cette nuit'));
   const body = content.components.find((c) => c.type === 'text' && c.variant === 'body');
-  assert.match(body.text.fr, /À risque : Profitez/);
+  assert.match(body.text.fr, /\nPersonnes à risque : Profitez/);
 });
 
 test('air quality: a forecast-only community says so', () => {
