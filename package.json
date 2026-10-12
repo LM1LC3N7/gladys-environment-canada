@@ -1,6 +1,6 @@
 {
   "name": "gladys-environment-canada",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Environment Canada (ECCC) weather provider for Gladys Assistant: official forecasts and alerts, Air Quality Health Index, humidex and wind chill, radar.",
   "type": "module",
