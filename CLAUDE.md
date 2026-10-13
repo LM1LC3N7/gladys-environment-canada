@@ -7,7 +7,7 @@ human contributors.
 
 A Gladys Assistant **external integration** of type `weather`: a Node.js
 service (Node 22+, ESM, no build step) in its own sandboxed Docker container,
-talking to Gladys through `@gladysassistant/integration-sdk` (v0.14). It
+talking to Gladys through `@gladysassistant/integration-sdk` (v0.15). It
 answers `onWeatherGet` with the pivot weather format (contract B.18 of the
 Gladys spec `docs/specs/external-integrations/capabilities/weather-type.md`)
 from **Environment and Climate Change Canada** only, and adds two dashboard
