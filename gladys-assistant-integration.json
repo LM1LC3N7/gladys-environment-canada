@@ -6,8 +6,8 @@
     "en": "Official Environment Canada weather: alerts, air quality (AQHI), humidex and wind chill.",
     "fr": "Météo officielle d’Environnement Canada : alertes, cote air santé, humidex et refroidissement."
   },
-  "version": "0.1.1",
-  "docker_image": "ghcr.io/lm1lc3n7/gladys-environment-canada:0.1.1",
+  "version": "0.2.0",
+  "docker_image": "ghcr.io/lm1lc3n7/gladys-environment-canada:0.2.0",
   "gladys_version": ">=5.1.0",
   "cover_image": "https://raw.githubusercontent.com/LM1LC3N7/gladys-environment-canada/main/cover.png",
   "categories": ["environment"],
