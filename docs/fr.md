@@ -114,9 +114,35 @@ Il montre :
 | Chaleur dangereuse        | humidex de 46 à 53                                         |
 | Coup de chaleur imminent  | humidex de 54 ou plus                                      |
 
+## Le widget « Alertes météo »
+
+Pour une maison :
+
+- deux tuiles, le **niveau actuel** et le **niveau à venir** (les quatre
+  sévérités CAP : 1 mineure, 2 modérée, 3 sévère, 4 extrême ; une alerte
+  jaune est modérée, orange sévère, rouge extrême) ;
+- les alertes en cours, puis celles annoncées et les veilles, de la plus
+  sévère à la moins sévère, chacune avec sa **période** en heure locale, un
+  **badge de niveau** et le **texte officiel** dans le panneau de détail.
+
+Réglage **Maison** : le nom de la maison à afficher. Vide, c’est la première
+maison localisée.
+
 ## Scènes
 
-Deux déclencheurs, vérifiés toutes les 5 minutes :
+Quatre déclencheurs, vérifiés toutes les 5 minutes :
+
+- **Alerte météo émise** — Environnement Canada a émis une alerte pour une
+  maison, relevé son niveau, ou transformé une veille en avertissement.
+  Filtres : **maison**, **niveaux** (cochez 3 et 4 pour les seules alertes
+  orange et rouges), **types** (vent, pluie, inondation, orages, neige et
+  pluie verglaçante, chaleur, froid, avalanche, côtier, brouillard, autre).
+  Variables : `title`, `type`, `level` (1 à 4), `level_name`, `alert_type`
+  (warning, watch, advisory, statement), `start`, `end` (en heure locale,
+  « demain 06:00 »), `in_force`, `description`, `summary`, `house`.
+- **Alerte météo levée** — plus aucune alerte d’un type pour une maison :
+  son heure de fin est passée et Environnement Canada ne l’a pas prolongée.
+  Filtres : maison, types.
 
 - **Niveau de qualité de l'air changé** — la cote air santé d'une maison
   atteint un nouveau niveau de risque.

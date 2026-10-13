@@ -51,9 +51,14 @@ src/assessment.js           feels-like index of a snapshot, synthetic alerts
 src/indicators.js           muggy night, black ice, pressure trend (pure)
 src/sun.js                  sunrise/sunset, day/night (pure)
 src/conditions.js           ECCC icon codes -> pivot conditions
-src/watcher.js              5-min loop: alerts nudge, scene events, widget nudges
+src/watcher.js              5-min loop: alerts nudge, scene events, widget nudges;
+                            minute clock for the alerts widget
 src/sceneTriggers.js        feels-like and AQHI level trackers (baseline, hysteresis)
-src/widgets.js              "feels_like" and "air_quality" widget contents
+src/alertTracker.js         alert issued / ended tracker (memory in /data, compared by
+                            kind and level, "ended" confirmed by ECCC)
+src/scenes.js               "get_alerts" scene action (summary ready to send)
+src/store.js                JSON files in /data (ECCC_DATA_DIR locally), memory store for tests
+src/widgets.js              "alerts", "feels_like" and "air_quality" widget contents
 src/actions.js              "test_sources" button
 src/i18n.js                 runtime texts (fr/en)
 test/fixtures/              recorded API answers
@@ -96,7 +101,13 @@ happen only in `src/pivot.js` (and in the widget / scene texts).
   keys its alert diff on the event of an untyped alert.
 - **Widget texts are bounded**: a `body` text holds 300 characters (the AQHI
   advice is tested against it), a `caption` 80, a status label 40.
-- **Read-only rootfs**: write nothing outside `/data` (we write nothing).
+- **Read-only rootfs**: write nothing outside `/data`: `alerts.json` (the
+  memory of the alert triggers) through `src/store.js`. House coordinates
+  are personal data: never logged nor written.
+- **Scene filters compare values only** (equality and membership): the alert
+  level is a `multi_select` of 1 to 4, the event sends it as a number (the
+  core converts it to compare with the options). An updated ECCC alert keeps
+  its id but the triggers compare by kind and level anyway.
 - **Versions belong to the Release workflow** (Actions → Release). Never edit
   `version` in `package.json` or in the manifest, nor the `docker_image` tag.
 - **Changelog**: every user-visible change adds a line under

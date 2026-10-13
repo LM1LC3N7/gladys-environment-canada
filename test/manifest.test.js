@@ -10,6 +10,8 @@ import { readFile } from 'node:fs/promises';
 import { SCENE_TRIGGER_KEYS } from '../src/sceneTriggers.js';
 import { createWidgets } from '../src/widgets.js';
 import { createActions } from '../src/actions.js';
+import { createSceneActions } from '../src/scenes.js';
+import { ALERT_KINDS, LEVEL_BY_SEVERITY } from '../src/sources/ecccAlerts.js';
 import { DEFAULT_CONFIG } from '../src/config.js';
 import { LEVEL_KEYS } from '../src/feelsLike.js';
 import { AQHI_LEVELS } from '../src/aqhi.js';
@@ -33,6 +35,7 @@ const allFields = [
 
 const WIDGETS = createWidgets({});
 const ACTIONS = createActions({});
+const SCENE_ACTIONS = createSceneActions({});
 
 // Manifest fields older Gladys releases reject as unknown, with the first
 // release accepting them. The store validator refuses a manifest whose
@@ -129,6 +132,33 @@ test('every widgets key has an onWidgetGet handler, and vice versa', () => {
   }
 });
 
+test('every scene action has a handler, and vice versa', () => {
+  const declared = keysOf(manifest.scene_actions);
+  for (const key of declared) {
+    assert.equal(typeof SCENE_ACTIONS[key], 'function', `scene action "${key}" has no handler`);
+  }
+  for (const key of Object.keys(SCENE_ACTIONS)) {
+    assert.ok(declared.includes(key), `handler "${key}" is not declared in scene_actions`);
+  }
+});
+
+test('the alert triggers offer exactly the kinds and levels the code fires', () => {
+  for (const key of ['alert_issued', 'alert_ended']) {
+    const trigger = manifest.scene_triggers.find((t) => t.key === key);
+    const type = trigger.fields.find((f) => f.key === 'type');
+    assert.deepEqual(
+      type.options.map((o) => o.value),
+      ALERT_KINDS,
+    );
+  }
+  const issued = manifest.scene_triggers.find((t) => t.key === 'alert_issued');
+  const level = issued.fields.find((f) => f.key === 'level');
+  assert.deepEqual(
+    level.options.map((o) => o.value),
+    Object.values(LEVEL_BY_SEVERITY).map(String),
+  );
+});
+
 test('every scene trigger the code fires is declared in scene_triggers, and vice versa', () => {
   // An undeclared key is a 404 on publishSceneEvent; a declared key nobody
   // fires is a dead card in the scene editor.
@@ -188,7 +218,7 @@ test('no dynamic source: the store schema only knows "devices", and we have none
 });
 
 test('select options are strings and defaults are among them', () => {
-  for (const field of allFields.filter((f) => f.type === 'select')) {
+  for (const field of allFields.filter((f) => f.type === 'select' || f.type === 'multi_select')) {
     for (const option of field.options) {
       assert.equal(typeof option.value, 'string');
       assert.ok(option.label.en && option.label.fr, `${field.key}.${option.value} label`);
@@ -215,11 +245,15 @@ test('every text is bilingual (English and French)', () => {
   const texts = [
     manifest.description,
     ...allFields.flatMap((f) => [f.label, f.description, f.placeholder]),
-    ...[...manifest.actions, ...manifest.scene_triggers, ...manifest.widgets].flatMap((e) => [
-      e.label,
-      e.description,
-    ]),
+    ...allFields.flatMap((f) => (f.options ?? []).map((o) => o.label)),
+    ...[
+      ...manifest.actions,
+      ...manifest.scene_triggers,
+      ...manifest.scene_actions,
+      ...manifest.widgets,
+    ].flatMap((e) => [e.label, e.description]),
     ...manifest.scene_triggers.flatMap((t) => t.variables.map((v) => v.label)),
+    ...manifest.scene_actions.flatMap((a) => a.outputs.map((v) => v.label)),
   ].filter(Boolean);
   for (const text of texts) {
     assert.ok(text.en && text.fr, `missing translation: ${JSON.stringify(text)}`);

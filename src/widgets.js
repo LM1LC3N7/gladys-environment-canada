@@ -18,7 +18,9 @@
 // -----------------------------------------------------------------------------
 
 import { WIDGET_COLORS, createLogger } from '@gladysassistant/integration-sdk';
-import { AIR_QUALITY_WIDGET, FEELS_LIKE_WIDGET } from './constants.js';
+import { AIR_QUALITY_WIDGET, ALERTS_WIDGET, FEELS_LIKE_WIDGET } from './constants.js';
+import { LEVEL_NAMES, WORDS, alertTitle, clock, period, textLanguage } from './i18n.js';
+import { inForce } from './sources/ecccAlerts.js';
 import { aqhiLevelOf, formatAqhi, getAqhiLevel, roundAqhi } from './aqhi.js';
 import { assess } from './assessment.js';
 import { INDEX_KINDS, getLevel } from './feelsLike.js';
@@ -417,11 +419,136 @@ export function buildAirQualityContent(airQuality, { utcOffsetMinutes = 0 } = {}
   return { ttl_seconds: CONTENT_TTL, components };
 }
 
+// The vocabulary of the widgets has six colors, the CAP four severities
+// plus "none": minor and moderate share `warning`, severe and extreme
+// share `danger`, the number makes the difference.
+export const LEVEL_COLORS = [
+  WIDGET_COLORS.SUCCESS,
+  WIDGET_COLORS.WARNING,
+  WIDGET_COLORS.WARNING,
+  WIDGET_COLORS.DANGER,
+  WIDGET_COLORS.DANGER,
+];
+export const LEVEL_ICONS = ['check-circle', 'info', 'alert-triangle', 'alert-octagon', 'zap'];
+const MAX_ITEMS = 8;
+const ECCC_PAGE = 'https://weather.gc.ca/warnings/index_e.html';
+
+function levelTile(label, level) {
+  return {
+    type: 'value',
+    label,
+    value: both((lang) => (level === 0 ? WORDS[lang].none : WORDS[lang].level(level))),
+    color: LEVEL_COLORS[level],
+    icon: LEVEL_ICONS[level],
+  };
+}
+
+const truncate = (text, max) =>
+  typeof text === 'string' && text.length > max ? `${text.slice(0, max - 1)}…` : text;
+
+function alertCard(alert, active, context) {
+  const { language: lang } = context;
+  const span = period(alert, active, context);
+  const description = alert.description?.[lang] ?? alert.description?.en ?? '';
+  return {
+    title: truncate(alertTitle(alert, lang), 60),
+    subtitle: truncate(alert.watch ? `${WORDS[lang].watch} · ${span}` : span, 60),
+    date: alert.start,
+    badge: { text: both((l) => WORDS[l].level(alert.level)), color: LEVEL_COLORS[alert.level] },
+    ...(description ? { description: truncate(description.trim(), 2000) } : {}),
+    links: [{ url: ECCC_PAGE, label: { en: 'ECCC alerts', fr: 'Alertes ECCC' } }],
+  };
+}
+
+/**
+ * Build the alerts widget content (pure: tested without network).
+ * @param {object[]} alerts see src/sources/ecccAlerts.js
+ * @param {{ house?: object, now?: number, language?: string, fetchedAt?: number }} options
+ */
+export function buildAlertsContent(alerts, { house, now = Date.now(), language, fetchedAt } = {}) {
+  const lang = textLanguage(language);
+  const timeZone = house?.timeZone ?? 'America/Toronto';
+  const context = { now, timeZone, language: lang };
+  const active = alerts.filter((a) => inForce(a, now));
+  const upcoming = alerts.filter((a) => !inForce(a, now));
+  const currentLevel = Math.max(0, ...active.map((a) => a.level));
+  const upcomingLevel = Math.max(0, ...upcoming.map((a) => a.level));
+  const components = [
+    {
+      type: 'text',
+      variant: 'heading',
+      text: both((l) =>
+        alerts.length === 0
+          ? LEVEL_NAMES[l][0]
+          : `${LEVEL_NAMES[l][Math.max(currentLevel, upcomingLevel)]} · ${alerts.length}`,
+      ),
+    },
+    levelTile(
+      both((l) => WORDS[l].now),
+      currentLevel,
+    ),
+    levelTile(
+      both((l) => WORDS[l].later),
+      upcomingLevel,
+    ),
+  ];
+  const items = [
+    ...active.map((a) => alertCard(a, true, context)),
+    ...upcoming.map((a) => alertCard(a, false, context)),
+  ].slice(0, MAX_ITEMS);
+  if (items.length > 0) {
+    components.push({ type: 'card-list', display: 'list', items });
+  }
+  const name = truncate(house?.name ?? '', 30);
+  const at = fetchedAt ? clock(fetchedAt, timeZone) : undefined;
+  components.push({
+    type: 'text',
+    variant: 'caption',
+    text: both((l) =>
+      truncate(
+        {
+          en: `Environment Canada alerts${name ? ` for ${name}` : ''}${at ? `, read at ${at}` : ''}.`,
+          fr: `Alertes d’Environnement Canada${name ? ` pour ${name}` : ''}${at ? `, lues à ${at}` : ''}.`,
+        }[l],
+        80,
+      ),
+    ),
+  });
+  return { ttl_seconds: CONTENT_TTL, components };
+}
+
 /**
  * @param {{ provider: object, watcher: object, rememberPreferences: Function }} deps
  */
-export function createWidgets({ provider, watcher, rememberPreferences }) {
+export function createWidgets({ provider, watcher, rememberPreferences, now = Date.now }) {
   return {
+    [ALERTS_WIDGET]: {
+      async get({ settings = {}, language, units }) {
+        rememberPreferences({ language, units });
+        const house = watcher.findHouse(settings.house);
+        if (!house) {
+          return noHouse(settings.house);
+        }
+        if (!isInCanadaArea(house.latitude, house.longitude)) {
+          return message(OUTSIDE_CANADA);
+        }
+        try {
+          const alerts = await provider.getAlerts(house.latitude, house.longitude);
+          return buildAlertsContent(alerts, {
+            house: { ...house, timeZone: watcher.timeZoneOfHouse(house) },
+            now: now(),
+            language,
+            fetchedAt: alerts.fetchedAt,
+          });
+        } catch (err) {
+          logger.warn(`Alerts widget: ${err.message}`);
+          return message({
+            en: 'Alerts unavailable for now, retrying soon.',
+            fr: 'Alertes indisponibles pour le moment, nouvel essai bientôt.',
+          });
+        }
+      },
+    },
     [FEELS_LIKE_WIDGET]: {
       async get({ settings = {}, language, units }) {
         rememberPreferences({ language, units });
@@ -472,4 +599,4 @@ export function createWidgets({ provider, watcher, rememberPreferences }) {
   };
 }
 
-export const WIDGET_KEYS = [FEELS_LIKE_WIDGET, AIR_QUALITY_WIDGET];
+export const WIDGET_KEYS = [ALERTS_WIDGET, FEELS_LIKE_WIDGET, AIR_QUALITY_WIDGET];

@@ -19,6 +19,9 @@ the house. Canada only.
 | ------------------------------------------------------------------------------------------------ | --------------------------------------------- |
 | Current conditions, 24 hours, ~6 days in the Gladys pivot format (metric or US units), UV index  | `src/provider.js`, `src/pivot.js`             |
 | Official ECCC alerts (CAP severities and types) + `requestWeatherRefresh()` when they change     | `src/sources/ecccAlerts.js`, `src/watcher.js` |
+| Scene triggers "alert issued" / "alert ended" (house, levels 1–4, types), memory in `/data`      | `src/alertTracker.js`, `src/store.js`         |
+| Scene action "current weather alerts": summary ready to send, levels now and later               | `src/scenes.js`                               |
+| "Weather alerts" widget: levels now and later, period, badge, official text, minute clock        | `src/widgets.js`                              |
 | "Air quality" widget: AQHI now and its risk level, 24-hour forecast, periods, smoke, advice      | `src/widgets.js`, `src/sources/ecccAqhi.js`   |
 | Scene trigger "air quality level changed" (four Health Canada levels, one event per crossed one) | `src/sceneTriggers.js`, `src/aqhi.js`         |
 | "Feels like" widget: humidex / wind chill, risk level, worst hour, time to frostbite             | `src/widgets.js`, `src/feelsLike.js`          |
@@ -40,7 +43,9 @@ onWeatherGet(lat, lon, language, units)
        └─ toPivot (metric snapshot -> requested units and language)
 
 Watcher, every 5 min, per located house (getHouses, manifest location: true)
-  ├─ alerts changed             -> requestWeatherRefresh()
+  ├─ alerts changed             -> requestWeatherRefresh(), requestWidgetRefresh('alerts')
+  ├─ alert kind new / raised    -> publishSceneEvent('alert_issued'), memory in /data
+  ├─ alert kind gone (confirmed)-> publishSceneEvent('alert_ended')
   ├─ feels-like level crossed   -> publishSceneEvent('feels_like_level_changed')
   ├─ AQHI level crossed         -> publishSceneEvent('air_quality_level_changed')
   └─ new data                   -> requestWidgetRefresh('feels_like' | 'air_quality')

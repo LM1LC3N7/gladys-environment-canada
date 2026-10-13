@@ -20,10 +20,9 @@ import { celsiusToFahrenheit, kmToMiles, mmToInches, msToMph, round } from './un
 
 export const UNITS = { METRIC: 'metric', US: 'us' };
 
-/** Language of the texts we hold (French or English). */
-export function textLanguage(language) {
-  return typeof language === 'string' && language.toLowerCase().startsWith('fr') ? 'fr' : 'en';
-}
+import { textLanguage } from './i18n.js';
+
+export { textLanguage };
 
 export function converters(units) {
   const us = units === UNITS.US;

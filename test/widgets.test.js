@@ -244,3 +244,31 @@ test('the air quality widget answers for the house, and says when there is no in
   const abroad = await widget.get({ settings: { house: 'Paris' }, language: 'fr' });
   assert.match(abroad.components[0].text.fr, /ne couvre que le Canada/);
 });
+
+test('the alerts widget shows the levels now and later and the alerts, valid for the core', async () => {
+  const { parseAlerts } = await import('../src/sources/ecccAlerts.js');
+  const { buildAlertsContent } = await import('../src/widgets.js');
+  const { validateWidgetContent } = await import('@gladysassistant/integration-sdk');
+  const alerts = parseAlerts(fixture('eccc-alerts.json'), 46.8, -70.8, FIXTURE_NOW);
+  const content = buildAlertsContent(alerts, {
+    house: { name: 'Chalet', timeZone: 'America/Toronto' },
+    now: FIXTURE_NOW,
+    language: 'fr',
+    fetchedAt: FIXTURE_NOW,
+  });
+  assert.deepEqual(validateWidgetContent(content), []);
+  assert.equal(content.components[0].text.fr, 'Modérée · 1');
+  assert.equal(content.components[1].value.fr, 'Niveau 2');
+  assert.equal(content.components[1].color, 'warning');
+  assert.equal(content.components[2].value.en, 'None');
+  const list = content.components.find((c) => c.type === 'card-list');
+  assert.equal(list.items[0].title, 'Avis de gel (niveau 2)');
+  assert.equal(list.items[0].subtitle, 'jusqu’à demain 10:00');
+  assert.equal(
+    content.components.at(-1).text.fr,
+    'Alertes d’Environnement Canada pour Chalet, lues à 08:30.',
+  );
+  const empty = buildAlertsContent([], { language: 'en' });
+  assert.deepEqual(validateWidgetContent(empty), []);
+  assert.equal(empty.components[0].text.en, 'No alert');
+});

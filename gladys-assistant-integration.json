@@ -50,8 +50,8 @@
         "fr": "Alertes officielles"
       },
       "description": {
-        "en": "Warnings, watches, advisories and statements of Environment Canada for your house, air quality and wildfire smoke statements included. They feed the weather widget and the core “weather alert” scene trigger.",
-        "fr": "Avertissements, veilles, avis et bulletins d’Environnement Canada pour votre maison, y compris les bulletins sur la qualité de l’air et la fumée des feux de forêt. Ils alimentent le widget météo et le déclencheur de scène « alerte météo »."
+        "en": "Warnings, watches, advisories and statements of Environment Canada for your house, air quality and wildfire smoke statements included. They feed the weather widget, the core “weather alert” scene trigger and the “alert issued / ended” triggers.",
+        "fr": "Avertissements, veilles, avis et bulletins d’Environnement Canada pour votre maison, y compris les bulletins sur la qualité de l’air et la fumée des feux de forêt. Ils alimentent le widget météo, le déclencheur de scène « alerte météo » et les déclencheurs « alerte émise / levée »."
       },
       "default": true
     },
@@ -477,9 +477,493 @@
           }
         }
       ]
+    },
+    {
+      "key": "alert_issued",
+      "label": {
+        "en": "Weather alert issued",
+        "fr": "Alerte météo émise"
+      },
+      "description": {
+        "en": "Environment Canada issued an alert for a house, raised its level (yellow, orange, red), or turned a watch into a warning.",
+        "fr": "Environnement Canada a émis une alerte pour une maison, relevé son niveau (jaune, orange, rouge), ou transformé une veille en avertissement."
+      },
+      "fields": [
+        {
+          "key": "house",
+          "type": "string",
+          "label": {
+            "en": "House",
+            "fr": "Maison"
+          },
+          "description": {
+            "en": "Exact name of the house in Gladys. Empty: every house.",
+            "fr": "Nom exact de la maison dans Gladys. Vide : toutes les maisons."
+          },
+          "placeholder": {
+            "en": "e.g. Home",
+            "fr": "ex. Maison"
+          }
+        },
+        {
+          "key": "level",
+          "type": "multi_select",
+          "label": {
+            "en": "Levels",
+            "fr": "Niveaux"
+          },
+          "description": {
+            "en": "Tick 3 and 4 for the orange and red alerts only. Empty: every level.",
+            "fr": "Cochez 3 et 4 pour les seules alertes orange et rouges. Vide : tous les niveaux."
+          },
+          "options": [
+            {
+              "value": "1",
+              "label": {
+                "en": "1 – Minor",
+                "fr": "1 – Mineure"
+              }
+            },
+            {
+              "value": "2",
+              "label": {
+                "en": "2 – Moderate",
+                "fr": "2 – Modérée"
+              }
+            },
+            {
+              "value": "3",
+              "label": {
+                "en": "3 – Severe",
+                "fr": "3 – Sévère"
+              }
+            },
+            {
+              "value": "4",
+              "label": {
+                "en": "4 – Extreme",
+                "fr": "4 – Extrême"
+              }
+            }
+          ]
+        },
+        {
+          "key": "type",
+          "type": "multi_select",
+          "label": {
+            "en": "Alert types",
+            "fr": "Types d’alerte"
+          },
+          "description": {
+            "en": "Empty: every type.",
+            "fr": "Vide : tous les types."
+          },
+          "options": [
+            {
+              "value": "wind",
+              "label": {
+                "en": "Wind",
+                "fr": "Vent"
+              }
+            },
+            {
+              "value": "rain",
+              "label": {
+                "en": "Rain",
+                "fr": "Pluie"
+              }
+            },
+            {
+              "value": "flood",
+              "label": {
+                "en": "Flood",
+                "fr": "Inondation"
+              }
+            },
+            {
+              "value": "thunderstorm",
+              "label": {
+                "en": "Thunderstorms",
+                "fr": "Orages"
+              }
+            },
+            {
+              "value": "snow",
+              "label": {
+                "en": "Snow and freezing rain",
+                "fr": "Neige et pluie verglaçante"
+              }
+            },
+            {
+              "value": "heat",
+              "label": {
+                "en": "Heat",
+                "fr": "Chaleur"
+              }
+            },
+            {
+              "value": "cold",
+              "label": {
+                "en": "Cold",
+                "fr": "Froid"
+              }
+            },
+            {
+              "value": "avalanche",
+              "label": {
+                "en": "Avalanche",
+                "fr": "Avalanche"
+              }
+            },
+            {
+              "value": "coastal",
+              "label": {
+                "en": "Coastal",
+                "fr": "Côtier"
+              }
+            },
+            {
+              "value": "fog",
+              "label": {
+                "en": "Fog",
+                "fr": "Brouillard"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Other",
+                "fr": "Autre"
+              }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "key": "house",
+          "type": "string",
+          "label": {
+            "en": "House",
+            "fr": "Maison"
+          }
+        },
+        {
+          "key": "type",
+          "type": "string",
+          "label": {
+            "en": "Type (filter value)",
+            "fr": "Type (valeur du filtre)"
+          }
+        },
+        {
+          "key": "type_name",
+          "type": "string",
+          "label": {
+            "en": "Type",
+            "fr": "Type"
+          }
+        },
+        {
+          "key": "level",
+          "type": "number",
+          "label": {
+            "en": "Level (1 to 4)",
+            "fr": "Niveau (1 à 4)"
+          }
+        },
+        {
+          "key": "level_name",
+          "type": "string",
+          "label": {
+            "en": "Level name",
+            "fr": "Nom du niveau"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre"
+          }
+        },
+        {
+          "key": "alert_type",
+          "type": "string",
+          "label": {
+            "en": "ECCC kind (warning, watch, advisory, statement)",
+            "fr": "Genre ECCC (warning, watch, advisory, statement)"
+          }
+        },
+        {
+          "key": "start",
+          "type": "string",
+          "label": {
+            "en": "Start",
+            "fr": "Début"
+          }
+        },
+        {
+          "key": "end",
+          "type": "string",
+          "label": {
+            "en": "End",
+            "fr": "Fin"
+          }
+        },
+        {
+          "key": "start_iso",
+          "type": "string",
+          "label": {
+            "en": "Start (ISO date)",
+            "fr": "Début (date ISO)"
+          }
+        },
+        {
+          "key": "end_iso",
+          "type": "string",
+          "label": {
+            "en": "End (ISO date)",
+            "fr": "Fin (date ISO)"
+          }
+        },
+        {
+          "key": "in_force",
+          "type": "boolean",
+          "label": {
+            "en": "In force now",
+            "fr": "En cours maintenant"
+          }
+        },
+        {
+          "key": "watch",
+          "type": "boolean",
+          "label": {
+            "en": "Watch",
+            "fr": "Veille"
+          }
+        },
+        {
+          "key": "description",
+          "type": "string",
+          "label": {
+            "en": "Description",
+            "fr": "Description"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé"
+          }
+        }
+      ]
+    },
+    {
+      "key": "alert_ended",
+      "label": {
+        "en": "Weather alert ended",
+        "fr": "Alerte météo levée"
+      },
+      "description": {
+        "en": "No alert of a type remains for a house (its end time passed and Environment Canada did not extend it).",
+        "fr": "Plus aucune alerte d’un type pour une maison (son heure de fin est passée et Environnement Canada ne l’a pas prolongée)."
+      },
+      "fields": [
+        {
+          "key": "house",
+          "type": "string",
+          "label": {
+            "en": "House",
+            "fr": "Maison"
+          },
+          "description": {
+            "en": "Exact name of the house in Gladys. Empty: every house.",
+            "fr": "Nom exact de la maison dans Gladys. Vide : toutes les maisons."
+          },
+          "placeholder": {
+            "en": "e.g. Home",
+            "fr": "ex. Maison"
+          }
+        },
+        {
+          "key": "type",
+          "type": "multi_select",
+          "label": {
+            "en": "Alert types",
+            "fr": "Types d’alerte"
+          },
+          "description": {
+            "en": "Empty: every type.",
+            "fr": "Vide : tous les types."
+          },
+          "options": [
+            {
+              "value": "wind",
+              "label": {
+                "en": "Wind",
+                "fr": "Vent"
+              }
+            },
+            {
+              "value": "rain",
+              "label": {
+                "en": "Rain",
+                "fr": "Pluie"
+              }
+            },
+            {
+              "value": "flood",
+              "label": {
+                "en": "Flood",
+                "fr": "Inondation"
+              }
+            },
+            {
+              "value": "thunderstorm",
+              "label": {
+                "en": "Thunderstorms",
+                "fr": "Orages"
+              }
+            },
+            {
+              "value": "snow",
+              "label": {
+                "en": "Snow and freezing rain",
+                "fr": "Neige et pluie verglaçante"
+              }
+            },
+            {
+              "value": "heat",
+              "label": {
+                "en": "Heat",
+                "fr": "Chaleur"
+              }
+            },
+            {
+              "value": "cold",
+              "label": {
+                "en": "Cold",
+                "fr": "Froid"
+              }
+            },
+            {
+              "value": "avalanche",
+              "label": {
+                "en": "Avalanche",
+                "fr": "Avalanche"
+              }
+            },
+            {
+              "value": "coastal",
+              "label": {
+                "en": "Coastal",
+                "fr": "Côtier"
+              }
+            },
+            {
+              "value": "fog",
+              "label": {
+                "en": "Fog",
+                "fr": "Brouillard"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Other",
+                "fr": "Autre"
+              }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "key": "house",
+          "type": "string",
+          "label": {
+            "en": "House",
+            "fr": "Maison"
+          }
+        },
+        {
+          "key": "type",
+          "type": "string",
+          "label": {
+            "en": "Type (filter value)",
+            "fr": "Type (valeur du filtre)"
+          }
+        },
+        {
+          "key": "type_name",
+          "type": "string",
+          "label": {
+            "en": "Type",
+            "fr": "Type"
+          }
+        },
+        {
+          "key": "level",
+          "type": "number",
+          "label": {
+            "en": "Level (1 to 4)",
+            "fr": "Niveau (1 à 4)"
+          }
+        },
+        {
+          "key": "level_name",
+          "type": "string",
+          "label": {
+            "en": "Level name",
+            "fr": "Nom du niveau"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre"
+          }
+        }
+      ]
     }
   ],
   "widgets": [
+    {
+      "key": "alerts",
+      "label": {
+        "en": "Weather alerts",
+        "fr": "Alertes météo"
+      },
+      "description": {
+        "en": "Levels now and later, the alerts in force with period, badge and the official text.",
+        "fr": "Niveaux actuel et à venir, les alertes en cours avec période, badge et texte officiel."
+      },
+      "icon": "alert-triangle",
+      "settings": [
+        {
+          "key": "house",
+          "type": "string",
+          "label": {
+            "en": "House",
+            "fr": "Maison"
+          },
+          "description": {
+            "en": "Name of the house in Gladys. Empty: the first located house.",
+            "fr": "Nom de la maison dans Gladys. Vide : la première maison localisée."
+          },
+          "placeholder": {
+            "en": "e.g. Home",
+            "fr": "ex. Maison"
+          }
+        }
+      ]
+    },
     {
       "key": "feels_like",
       "label": {
@@ -536,6 +1020,88 @@
           "placeholder": {
             "en": "e.g. Home",
             "fr": "ex. Maison"
+          }
+        }
+      ]
+    }
+  ],
+  "scene_actions": [
+    {
+      "key": "get_alerts",
+      "label": {
+        "en": "Current weather alerts",
+        "fr": "Alertes météo en cours"
+      },
+      "description": {
+        "en": "A summary of the Environment Canada alerts in force and announced, ready to send in a message, and their levels.",
+        "fr": "Un résumé des alertes d’Environnement Canada en cours et annoncées, prêt à envoyer dans un message, et leurs niveaux."
+      },
+      "timeout_seconds": 15,
+      "fields": [
+        {
+          "key": "house",
+          "type": "string",
+          "label": {
+            "en": "House",
+            "fr": "Maison"
+          },
+          "description": {
+            "en": "Exact name of the house in Gladys. Empty: every located house.",
+            "fr": "Nom exact de la maison dans Gladys. Vide : toutes les maisons localisées."
+          },
+          "placeholder": {
+            "en": "e.g. Home",
+            "fr": "ex. Maison"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé"
+          }
+        },
+        {
+          "key": "count",
+          "type": "number",
+          "label": {
+            "en": "Number of alerts",
+            "fr": "Nombre d’alertes"
+          }
+        },
+        {
+          "key": "current_level",
+          "type": "number",
+          "label": {
+            "en": "Current level",
+            "fr": "Niveau actuel"
+          }
+        },
+        {
+          "key": "upcoming_level",
+          "type": "number",
+          "label": {
+            "en": "Upcoming level",
+            "fr": "Niveau à venir"
+          }
+        },
+        {
+          "key": "current_level_name",
+          "type": "string",
+          "label": {
+            "en": "Current level name",
+            "fr": "Nom du niveau actuel"
+          }
+        },
+        {
+          "key": "upcoming_level_name",
+          "type": "string",
+          "label": {
+            "en": "Upcoming level name",
+            "fr": "Nom du niveau à venir"
           }
         }
       ]

@@ -107,16 +107,58 @@ It shows:
 | Dangerous heat       | humidex 46 to 53                                  |
 | Heat stroke imminent | humidex 54 or more                                |
 
+## The "Weather alerts" widget
+
+For a house:
+
+- two tiles, the **level now** and the **level later** (the four CAP
+  severities: 1 minor, 2 moderate, 3 severe, 4 extreme; a yellow alert is
+  moderate, orange severe, red extreme);
+- the alerts in force, then the announced ones and the watches, most severe
+  first, each with its **period** in local time, a **level badge** and the
+  official **text** in the detail panel.
+
+**House** setting: the name of the house to show. Empty, it is the first
+located house.
+
 ## Scenes
 
-Two triggers, checked every 5 minutes:
+Four triggers, checked every 5 minutes:
+
+- **Weather alert issued** — Environment Canada issued an alert for a house,
+  raised its level, or turned a watch into a warning. Filters: **house**,
+  **levels** (tick 3 and 4 for the orange and red alerts only), **alert
+  types** (wind, rain, flood, thunderstorms, snow and freezing rain, heat,
+  cold, avalanche, coastal, fog, other). Variables: `title`, `type`, `level`
+  (1 to 4), `level_name`, `alert_type` (warning, watch, advisory,
+  statement), `start`, `end` (local, as "tomorrow 06:00"), `in_force`,
+  `description`, `summary`, `house`.
+- **Weather alert ended** — no alert of a type remains for a house: its end
+  time passed and Environment Canada did not extend it. Filters: house,
+  types.
 
 - **Air quality level changed** — the Air Quality Health Index of a house
   reaches a new risk level.
 - **Feels-like level changed** — the humidex or the wind chill of a house
   reaches a new level.
 
-Filters, all optional:
+Alerts are compared by type and level: an update at the same level fires
+nothing. What was announced is kept in the integration data: a restart
+fires nothing again, and an alert issued meanwhile fires once.
+
+One scene action:
+
+- **Current weather alerts** — a summary of the alerts in force and
+  announced, ready to send in a message (`{{summary}}`), with `count`,
+  `current_level` and `upcoming_level` for a following condition. Field
+  **house**: a house name, empty for all.
+
+Examples: an orange or red alert → send "{{triggerEvent.data.title}},
+{{triggerEvent.data.start}} – {{triggerEvent.data.end}}" and close the
+shutters; a snow or freezing rain alert → plug in the block heater; every
+morning at 7, the summary of the day on Telegram when there is one.
+
+Filters of the level triggers, all optional:
 
 - **Level reached** — e.g. "High risk". The scene fires even when the index
   jumps over this level (from "low" to "very high").

@@ -21,6 +21,22 @@ const SEARCH_RADIUS = 0.01;
 const INACTIVE_STATUSES = new Set(['ended', 'cancelled', 'canceled', 'expired']);
 
 const COLOUR_SEVERITY = { red: 'extreme', orange: 'severe', yellow: 'moderate' };
+// The four CAP severities as levels 1 to 4, for the scene filters.
+export const LEVEL_BY_SEVERITY = { minor: 1, moderate: 2, severe: 3, extreme: 4 };
+// Scene filter values: keys are forever (scenes store them).
+export const ALERT_KINDS = [
+  'wind',
+  'rain',
+  'flood',
+  'thunderstorm',
+  'snow',
+  'heat',
+  'cold',
+  'avalanche',
+  'coastal',
+  'fog',
+  'other',
+];
 // Older alerts carry no colour: their type gives the order of magnitude.
 const TYPE_SEVERITY = {
   warning: 'moderate',
@@ -91,19 +107,43 @@ export function parseAlerts(body, latitude, longitude, now = Date.now()) {
     if (alerts.has(id)) {
       continue;
     }
+    const type = alertType(p);
+    const severity = alertSeverity(p);
+    const start = dateOrUndefined(p.validity_datetime) ?? dateOrUndefined(p.publication_datetime);
+    const end = dateOrUndefined(p.event_end_datetime) ?? dateOrUndefined(p.expiration_datetime);
     alerts.set(id, {
       id,
       code: p.alert_code,
-      type: alertType(p),
-      severity: alertSeverity(p),
+      type,
+      // The scene filter value: the pivot type, "other" without one.
+      kind: type ?? 'other',
+      severity,
+      level: LEVEL_BY_SEVERITY[severity],
+      // A watch says conditions are favourable: counted as upcoming until a
+      // warning replaces it.
+      watch: String(p.alert_type ?? '').toLowerCase() === 'watch',
+      alertType: String(p.alert_type ?? '').toLowerCase() || undefined,
       colour: p.risk_colour_en ?? undefined,
       event: { en: capitalize(p.alert_name_en), fr: capitalize(p.alert_name_fr) },
       description: { en: p.alert_text_en, fr: p.alert_text_fr },
-      start: dateOrUndefined(p.validity_datetime) ?? dateOrUndefined(p.publication_datetime),
-      end: dateOrUndefined(p.event_end_datetime) ?? dateOrUndefined(p.expiration_datetime),
+      start,
+      end,
+      onsetMs: start ? Date.parse(start) : undefined,
+      expiresMs: end ? Date.parse(end) : undefined,
     });
   }
   return [...alerts.values()];
+}
+
+/** Whether an alert is in force at an instant (not a watch, started, not ended). */
+export function inForce(alert, now = Date.now()) {
+  if (alert.watch) {
+    return false;
+  }
+  if (alert.onsetMs !== undefined && alert.onsetMs > now) {
+    return false;
+  }
+  return alert.expiresMs === undefined || alert.expiresMs > now;
 }
 
 export async function fetchAlerts(latitude, longitude, { timeout, now = Date.now() } = {}) {
@@ -112,5 +152,7 @@ export async function fetchAlerts(latitude, longitude, { timeout, now = Date.now
     .map((v) => v.toFixed(4))
     .join(',');
   const body = await fetchJson(`${COLLECTION_URL}?f=json&limit=100&bbox=${bbox}`, { timeout });
-  return parseAlerts(body, latitude, longitude, now);
+  const alerts = parseAlerts(body, latitude, longitude, now);
+  alerts.sort((a, b) => b.level - a.level || (a.onsetMs ?? 0) - (b.onsetMs ?? 0));
+  return alerts;
 }

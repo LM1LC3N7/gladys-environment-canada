@@ -13,7 +13,12 @@
 // The AQHI follows the same rules with its own four levels (src/aqhi.js).
 // -----------------------------------------------------------------------------
 
-import { AIR_QUALITY_TRIGGER, FEELS_LIKE_TRIGGER } from './constants.js';
+import {
+  AIR_QUALITY_TRIGGER,
+  ALERT_ENDED_TRIGGER,
+  ALERT_ISSUED_TRIGGER,
+  FEELS_LIKE_TRIGGER,
+} from './constants.js';
 import {
   aqhiLevelWithHysteresis,
   crossedAqhiLevels,
@@ -25,7 +30,12 @@ import { INDEX_KINDS, crossedLevels, getLevel, levelWithHysteresis } from './fee
 import { describeIndex } from './i18n.js';
 import { converters, textLanguage, UNITS } from './pivot.js';
 
-export const SCENE_TRIGGER_KEYS = [FEELS_LIKE_TRIGGER, AIR_QUALITY_TRIGGER];
+export const SCENE_TRIGGER_KEYS = [
+  FEELS_LIKE_TRIGGER,
+  AIR_QUALITY_TRIGGER,
+  ALERT_ISSUED_TRIGGER,
+  ALERT_ENDED_TRIGGER,
+];
 
 export class FeelsLikeTracker {
   constructor() {

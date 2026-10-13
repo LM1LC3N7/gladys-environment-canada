@@ -5,8 +5,9 @@
 // SDK wiring only — the logic lives in src/:
 //   provider.js      ECCC sources, caches, alerts, air quality -> pivot weather
 //   watcher.js       background loop: alerts nudge, scene events, widget nudges
-//   widgets.js       "Feels like" and "Air quality" dashboard widgets
-//   sceneTriggers.js feels-like and air quality level scene triggers
+//   widgets.js       "Alerts", "Feels like" and "Air quality" dashboard widgets
+//   sceneTriggers.js feels-like, air quality, alert issued / ended scene triggers
+//   scenes.js        "Current alerts" scene action
 //   actions.js       Configuration screen "test" button
 //
 // Handlers are registered BEFORE connect(). The three GLADYS_* environment
@@ -19,6 +20,8 @@ import { OutsideCanadaError, WeatherProvider } from './src/provider.js';
 import { Watcher } from './src/watcher.js';
 import { createWidgets } from './src/widgets.js';
 import { createActions } from './src/actions.js';
+import { createSceneActions } from './src/scenes.js';
+import { createStore } from './src/store.js';
 import { UNITS } from './src/pivot.js';
 
 const gladys = new GladysIntegration();
@@ -64,7 +67,12 @@ function reportStatus({ ok, source, error }) {
 }
 
 const provider = new WeatherProvider({ getConfig: () => config, onStatus: reportStatus });
-const watcher = new Watcher({ gladys, provider, getPreferences: () => preferences });
+const watcher = new Watcher({
+  gladys,
+  provider,
+  getPreferences: () => preferences,
+  store: createStore(),
+});
 
 // --- Weather (manifest type "weather", contract B.18) -----------------------
 // Answered under 15 s; the cache (10 min) keeps it far below in practice.
@@ -84,6 +92,13 @@ for (const [key, widget] of Object.entries(
   createWidgets({ provider, watcher, rememberPreferences }),
 )) {
   gladys.onWidgetGet(key, (request) => widget.get(request));
+}
+
+// --- Scene actions -----------------------------------------------------------
+for (const [key, handler] of Object.entries(
+  createSceneActions({ watcher, provider, getPreferences: () => preferences }),
+)) {
+  gladys.onSceneAction(key, (fields) => handler(fields));
 }
 
 // --- Configuration screen buttons --------------------------------------------

@@ -10,6 +10,18 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+### Added
+
+- Scene triggers "weather alert issued" and "weather alert ended", filterable
+  by house, levels (1 to 4) and alert types, with the title, period and text
+  as variables; what was announced is kept in `/data`, so a restart fires
+  nothing again.
+- Scene action "current weather alerts": a summary ready to send, with the
+  count and the levels now and later.
+- "Weather alerts" widget: the levels now and later as tiles, the alerts in
+  force and the watches with their period, a badge and the official text; an
+  alert that starts moves the widget within the minute.
+
 ### Changed
 
 - Shared tooling of the LM1LC3N7 Gladys integrations: CI on Node 22 and 24 with `npm audit`, Release workflow driven by this changelog, GitHub Releases from its sections, grouped Dependabot updates.

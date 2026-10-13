@@ -7,24 +7,35 @@
 //   - alerts: re-read; a changed set of alerts -> requestWeatherRefresh(), so
 //     the core's "weather alert" scene trigger fires within minutes (the
 //     core re-pulls through onWeatherGet, served from the fresh cache);
+//     "alert issued" / "alert ended" scene events (src/alertTracker.js, the
+//     memory in /data);
 //   - feels-like and air quality levels: scene events on every crossed level;
 //   - new data -> requestWidgetRefresh() for the widgets.
 //
+// Every minute, without network, the cached alerts are re-read: an alert
+// announced for 14:00 is "now" at 14:00 in the alerts widget.
+//
 // The houses come from getHouses() (manifest `location: true`), re-read every
 // 30 min since Gladys has no "house changed" event. Without them, the last
-// location Gladys asked the weather for is watched.
+// location Gladys asked the weather for is watched. House coordinates are
+// never written to /data.
 // -----------------------------------------------------------------------------
 
 import { createLogger } from '@gladysassistant/integration-sdk';
 import {
   AIR_QUALITY_WIDGET,
+  ALERTS_WIDGET,
+  CLOCK_INTERVAL,
   FEELS_LIKE_WIDGET,
   HOUSES_REFRESH_INTERVAL,
   WATCH_INTERVAL,
 } from './constants.js';
-import { isValidLocation, locationKey } from './geo.js';
+import { isInCanadaArea, isValidLocation, locationKey } from './geo.js';
 import { assess } from './assessment.js';
 import { AirQualityTracker, FeelsLikeTracker } from './sceneTriggers.js';
+import { AlertTracker } from './alertTracker.js';
+import { inForce } from './sources/ecccAlerts.js';
+import { timeZoneOf } from './timezone.js';
 
 const defaultLogger = createLogger({ name: 'watcher' });
 
@@ -34,6 +45,11 @@ export function alertsSignature(alerts) {
     .map((alert) => `${alert.id ?? alert.event.en}|${alert.severity}`)
     .sort()
     .join(';');
+}
+
+/** A signature of what the alerts widget shows: in force / upcoming ids. */
+export function widgetSignature(alerts, now) {
+  return alerts.map((a) => `${a.id}:${inForce(a, now) ? 1 : 0}`).join(';');
 }
 
 /** A signature of the air quality: changes with a new reading or forecast. */
@@ -50,7 +66,7 @@ export class Watcher {
    *   getPreferences: () => { language: string, units: string }, logger?: object,
    *   now?: () => number }} options
    */
-  constructor({ gladys, provider, getPreferences, logger, now }) {
+  constructor({ gladys, provider, getPreferences, store, logger, now }) {
     this.gladys = gladys;
     this.provider = provider;
     this.getPreferences = getPreferences;
@@ -58,12 +74,15 @@ export class Watcher {
     this.now = now ?? Date.now;
     this.tracker = new FeelsLikeTracker();
     this.airTracker = new AirQualityTracker();
+    this.alertTracker = new AlertTracker({ store, now: this.now });
     this.houses = [];
     this.housesReadAt = 0;
     this.signatures = new Map();
+    this.widgetSignatures = new Map();
     this.airSignatures = new Map();
     this.fetchedAt = new Map();
     this.timer = undefined;
+    this.clock = undefined;
     this.running = false;
   }
 
@@ -73,11 +92,53 @@ export class Watcher {
     this.tick();
     this.timer = setInterval(() => this.tick(), WATCH_INTERVAL);
     this.timer.unref?.();
+    this.clock = setInterval(() => this.clockTick(), CLOCK_INTERVAL);
+    this.clock.unref?.();
   }
 
   stop() {
     clearInterval(this.timer);
+    clearInterval(this.clock);
     this.timer = undefined;
+    this.clock = undefined;
+  }
+
+  /** The IANA zone of a house: from its city page when known, else Eastern. */
+  timeZoneOfHouse(house) {
+    const cityId = this.provider.cachedSnapshot(house.latitude, house.longitude)?.snapshot.cityId;
+    const province = String(cityId ?? '').split('-')[0];
+    return (province && timeZoneOf(province, house.latitude, house.longitude)) || 'America/Toronto';
+  }
+
+  /** The houses a scene field names: one, or all located ones when empty. */
+  housesFor(query) {
+    if (!String(query ?? '').trim()) {
+      return this.locations();
+    }
+    const house = this.findHouse(query);
+    return house ? [house] : [];
+  }
+
+  /** Every minute: an alert that started or ended on the clock moves the widget. */
+  clockTick() {
+    let changed = false;
+    for (const house of this.locations()) {
+      const alerts = this.provider.cachedAlerts(house.latitude, house.longitude);
+      if (!alerts) {
+        continue;
+      }
+      const signature = widgetSignature(alerts, this.now());
+      if (
+        this.widgetSignatures.has(house.key) &&
+        this.widgetSignatures.get(house.key) !== signature
+      ) {
+        changed = true;
+      }
+      this.widgetSignatures.set(house.key, signature);
+    }
+    if (changed) {
+      this.gladys.requestWidgetRefresh(ALERTS_WIDGET);
+    }
   }
 
   async refreshHouses() {
@@ -132,17 +193,24 @@ export class Watcher {
         await this.refreshHouses();
       }
       let alertsChanged = false;
+      let widgetChanged = false;
       let dataChanged = false;
       let airChanged = false;
-      for (const house of this.locations()) {
+      const houses = this.locations();
+      for (const house of houses) {
         const result = await this.watchHouse(house);
         alertsChanged ||= result.alertsChanged;
+        widgetChanged ||= result.widgetChanged;
         dataChanged ||= result.dataChanged;
         airChanged ||= result.airChanged;
       }
+      this.alertTracker.keepOnly(houses.map((h) => h.key));
       if (alertsChanged) {
         this.logger.info('Alerts changed -> asking Gladys to refresh the weather');
         this.gladys.requestWeatherRefresh();
+      }
+      if (alertsChanged || widgetChanged) {
+        this.gladys.requestWidgetRefresh(ALERTS_WIDGET);
       }
       if (alertsChanged || dataChanged) {
         this.gladys.requestWidgetRefresh(FEELS_LIKE_WIDGET);
@@ -172,7 +240,7 @@ export class Watcher {
       snapshot = await this.provider.getSnapshot(latitude, longitude);
     } catch (err) {
       this.logger.warn(`No weather for ${house.name || key}: ${err.message}`);
-      return { alertsChanged: false, dataChanged: false, airChanged };
+      return { alertsChanged: false, widgetChanged: false, dataChanged: false, airChanged };
     }
     const fetchedAt = this.provider.cachedSnapshot(latitude, longitude)?.fetchedAt;
     const dataChanged = fetchedAt !== this.fetchedAt.get(key);
@@ -182,6 +250,26 @@ export class Watcher {
     const signature = alertsSignature(this.provider.combineAlerts(snapshot, official, airQuality));
     const previous = this.signatures.get(key);
     this.signatures.set(key, signature);
+    const shown = widgetSignature(official, this.now());
+    const widgetChanged =
+      this.widgetSignatures.has(key) && this.widgetSignatures.get(key) !== shown;
+    this.widgetSignatures.set(key, shown);
+    // Nothing fresh from ECCC (a cached answer served on a failure, or no
+    // alerts abroad): no alert event, the next successful read will tell.
+    if (official.fetchedAt > 0 && isInCanadaArea(latitude, longitude)) {
+      const area = { ...house, timeZone: this.timeZoneOfHouse(house) };
+      const events = this.alertTracker.evaluate(
+        area,
+        official,
+        official.fetchedAt,
+        this.getPreferences(),
+      );
+      for (const event of events) {
+        if (await this.publish(event)) {
+          event.commit();
+        }
+      }
+    }
 
     const events = this.tracker.evaluate(
       house,
@@ -193,6 +281,7 @@ export class Watcher {
     }
     return {
       alertsChanged: previous !== undefined && previous !== signature,
+      widgetChanged,
       dataChanged,
       airChanged,
     };
@@ -201,10 +290,12 @@ export class Watcher {
   // A refused event (429, 400) must never break the loop.
   async publish({ key, data }) {
     try {
-      this.logger.info(`Scene event ${key}: ${data.previous_level} -> ${data.level}`);
+      this.logger.info(`Scene event ${key}: ${data.summary ?? data.title ?? data.level}`);
       await this.gladys.publishSceneEvent(key, data);
+      return true;
     } catch (err) {
       this.logger.warn(`Scene event ${key} refused: ${err.message}`);
+      return false;
     }
   }
 }
