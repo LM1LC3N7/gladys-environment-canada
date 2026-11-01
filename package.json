@@ -21,7 +21,7 @@
     "url": "git+https://github.com/LM1LC3N7/gladys-environment-canada.git"
   },
   "dependencies": {
-    "@gladysassistant/integration-sdk": "^0.15.0",
+    "@gladysassistant/integration-sdk": "^0.16.0",
     "pngjs": "^7.0.0"
   },
   "devDependencies": {
