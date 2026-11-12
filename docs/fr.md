@@ -14,7 +14,7 @@ seulement.**
 
 ## Installation
 
-1. Installez l'intégration depuis le catalogue de Gladys (Gladys 5.1 ou plus
+1. Installez l'intégration depuis le catalogue de Gladys (Gladys 5.3 ou plus
    récent).
 2. Acceptez l'accès à la **position de vos maisons** : la météo est celle de
    la maison, rien d'autre à saisir.
