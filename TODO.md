@@ -26,3 +26,7 @@
 - [ ] Nowcast-like "rain in the next hour" trigger from the radar.
 - [ ] Hydrometric data (`hydrometric-realtime`): river level near the house,
       spring floods.
+
+## Next patch
+
+- Migration review minors: see `_lots/migration-reviews/w13-gladys-environment-canada-r1.md`.
